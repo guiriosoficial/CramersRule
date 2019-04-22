@@ -1,3 +1,4 @@
+Inserir nome do personagem
 Centralizar introdução
 Criar Loading na introdução
 Colorir Textos
