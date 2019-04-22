@@ -1,7 +1,7 @@
 # Caverna :volcano:
 
 ##### RESUMO :dart:
-Caverna, é um **Text-Based Adventure Game** (Jogo de Aventura Baseado em Texto, pra quem matou as aulas até da professora mais bonitinha que tinha) bem leve (bem levinho mesmo) pra rodar no seu PC com arquitetura em 8 bits, no seu Fax, ou até na sua Tekpix! :floppy_disk::fax::video_camera:
+Caverna, é um **Text-Based Adventure Game** (Jogo de Aventura Baseado em Texto, pra quem matou as aulas até da professora mais bonitinha que tinha) bem leve (bem levinho mesmo) pra rodar no seu PC com arquitetura em 8 bits, ou na sua Tekpix que você chama de computador...
 
 ##### SUMÁRIO :pushpin:
 - [O Jogo](#o-jogo-space_invader)
