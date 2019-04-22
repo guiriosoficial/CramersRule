@@ -4,13 +4,13 @@
 Caverna, é um **Text-Based Adventure Game** (Jogo de Aventura Baseado em Texto, pra quem matou as aulas até da professora mais bonitinha que tinha) bem leve (bem levinho mesmo) pra rodar no seu PC com arquitetura em 8 bits, no seu Fax, ou até na sua Tekpix! :floppy_disk::fax::video_camera:
 
 ##### SUMÁRIO :pushpin:
-- [O Jogo](#o-jogo)
-  - [Sobre o Jogo](#sobre-o-jogo)
-  - [A História](#a-historia)
-  - [Como Jogar](#como-jogar)
-- [Sobre Nós](#sobre-nos)
-- [Descréditos](#descreditos)
-- [Bônus](#bonus)
+- [O Jogo](#o-jogo-space_invader)
+  - [Sobre](#sobre-paperclip)
+  - [História](#historia-scroll)
+  - [Como Jogar](#como-jogar-video_game)
+- [Sobre Nós](#sobre-nos-shipit)
+- [Descréditos](#descreditos-skull)
+- [Bônus](#bonus-boom)
 
 ##### ATENÇÃO² :bangbang:
 > Este jogo é livre para todos públicos dispostos a se submeter a grandes bobagens. :poop::toilet:
@@ -18,25 +18,27 @@ Caverna, é um **Text-Based Adventure Game** (Jogo de Aventura Baseado em Texto,
 ## O Jogo :space_invader:
 > ###### Perdeu troxa :trollface:
 
-### Sobre o jogo :paperclip:
+### Sobre :paperclip:
 Na verdade, o **"Sobre o jogo"** está la em cima, aqui é apenas uma breve explicação de como surgiu essa idéia ridícula:
 - Dois nerdes imbecis, entediados em uma sexta a noite, juntam-se no **Skype** ainda sem saber o que iriam fazer.
 - Com a ajuda do amigo **Google**:  _"Pequenos Projetos para iniciantes em Python"_, tiveram a genial idéia desse jogo.  
 - Inspirado em **Bandersnatch** e **Dark forest**, começaram a "codar" esse monstrinho :3.
 
-### A Historia :scroll:
+### Historia :scroll:
 Sem spoiller aqui, vai ter que jogar pra descobrir, mas básicamente juntamos um monte de coisas sem sentido vindas de vários filmes e jogos e da nossa cabeça e juntamos tudo se um jeito mais sem sentido ainda, pra quem é bom de referência.  
 (E se entender algo, me explica por favor, eu ainda nao entendi nada)
 
 ### Como Jogar :video_game:
-É bem facil, primeiro você baixa, depois babre o jogo, e ai você joga. :)
+É bem facil, primeiro você baixa, depois babre o jogo, e ai você joga :).
 
-**Como Baixar e Instalar** (Não quis colocar nenhum emoji aqui, idaí? u.u)
 ```
+// Download
 $ comand
 
+// Install
 $ comand
 
+// Start
 $ comand
 ```
 
