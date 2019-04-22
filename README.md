@@ -1,7 +1,7 @@
 # Caverna :volcano:
 
 ##### RESUMO :dart:
-Caverna, é um **Text-Based Adventure Game** (Jogo de Aventura Baseado em Texto, pra quem matou as aulas até da professora mais bonitinha que tinha) bem leve (bem levinho mesmo) pra rodar no seu PC com arquitetura em 8 bits, ou na sua Tekpix que você chama de computador...
+Caverna, é um **Text-Based Adventure Game** (Jogo de Aventura Baseado em Texto, pra quem matou as aulas até da professora mais bonitinha que tinha) bem leve (bem levinho mesmo) pra rodar no seu PC com arquitetura em 8 bits (Aquela Tekpix que você comprou na promoção)...
 
 ##### SUMÁRIO :pushpin:
 - [O Jogo](#o-jogo-space_invader)
@@ -19,13 +19,13 @@ Caverna, é um **Text-Based Adventure Game** (Jogo de Aventura Baseado em Texto,
 > ###### Perdeu troxa :trollface:
 
 ### Sobre :game_die:
-Na verdade, o **"Sobre o jogo"** está la em cima, aqui é apenas uma breve explicação de como surgiu essa idéia ridícula:
+Na verdade, a cessão **"Sobre"** está la em cima, aqui é apenas uma breve explicação de como surgiu essa idéia ridícula:
 - Dois nerdes imbecis, entediados em uma sexta a noite, juntam-se no **Skype** ainda sem saber o que iriam fazer.
-- Com a ajuda do amigo **Google**:  _"Pequenos Projetos para iniciantes em Python"_, tiveram a genial idéia desse jogo.  
-- Inspirado em **Bandersnatch** e **Dark forest**, começaram a "codar" esse monstrinho :3.
+- Com a ajuda do grande amigo **Google**:  _"Pequenos Projetos para iniciantes em Python"_, tiveram a brilhante idéia desse jogo.  
+- Inspirado em **Bandersnatch** e **Dark Forest**, começaram a "codar" essa merda.
 
 ### Historia :scroll:
-Sem spoiller aqui, vai ter que jogar pra descobrir, mas básicamente juntamos um monte de coisas sem sentido vindas de vários filmes e jogos e da nossa cabeça e juntamos tudo se um jeito mais sem sentido ainda, pra quem é bom de referência.  
+Não vamos contar pra não dar spoiller, vai ter que jogar. Mas básicamente, juntamos um monte de trechos sem sentido nenhum vindos de vários filmes e jogos e da nossa cabeça, e juntamos tudo de um jeito mais sem sentido ainda (Quem for bom de referência vai gostar).  
 (E se entender algo, me explica por favor, eu ainda nao entendi nada)
 
 ### Como Jogar :video_game:
@@ -42,7 +42,7 @@ $ comand
 $ comand
 ```
 
-Depois que conseguir abrir o jogo, ai você se vira. Mentira, só seguir as instruções que vai receber durante o jogo (fazer o que a gente manda, kkkkkk).
+Depois que conseguir abrir o jogo, ai você se vira. Mentira, só seguir as instruções que vai receber durante o jogo (ou seja, fazer o que a gente manda, kkkkkk).
 
 ## Sobre Nós :shipit:
 Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Atirei o pau no gatis, per gatis num morreus. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Cevadis im ampola pa arma uma pindureta.
