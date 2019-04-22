@@ -8,9 +8,9 @@ Caverna, é um **Text-Based Adventure Game** (Jogo de Aventura Baseado em Texto,
   - [Sobre](#sobre-paperclip)
   - [História](#historia-scroll)
   - [Como Jogar](#como-jogar-video_game)
-- [Sobre Nós](#sobre-nos-shipit)
-- [Descréditos](#descreditos-skull)
-- [Bônus](#bonus-boom)
+- [Sobre Nós](#sobre-nós-shipit)
+- [Descréditos](#descréditos-skull)
+- [Bônus](#bônus-boom)
 
 ##### ATENÇÃO² :bangbang:
 > Este jogo é livre para todos públicos dispostos a se submeter a grandes bobagens. :poop::toilet:
