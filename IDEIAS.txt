@@ -1,0 +1,8 @@
+- Inserir Nome do Jogador
+
+- Criar Barra de Loading na Introdução
+
+- Criar Temporizadores para Respostas com Barras de Progresso
+
+- Colorir Textos
+

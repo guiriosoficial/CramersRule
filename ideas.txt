@@ -1,5 +1,0 @@
-Inserir nome do personagem
-Centralizar introdução
-Criar Loading na introdução
-Colorir Textos
-Adicionar temporizadores para respostas com barras de progresso
