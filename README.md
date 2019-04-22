@@ -18,7 +18,7 @@ Caverna, é um **Text-Based Adventure Game** (Jogo de Aventura Baseado em Texto,
 ## O Jogo :space_invader:
 > ###### Perdeu troxa :trollface:
 
-### Sobre :paperclip:
+### Sobre :game_die:
 Na verdade, o **"Sobre o jogo"** está la em cima, aqui é apenas uma breve explicação de como surgiu essa idéia ridícula:
 - Dois nerdes imbecis, entediados em uma sexta a noite, juntam-se no **Skype** ainda sem saber o que iriam fazer.
 - Com a ajuda do amigo **Google**:  _"Pequenos Projetos para iniciantes em Python"_, tiveram a genial idéia desse jogo.  
@@ -71,3 +71,5 @@ Tá fazendo o que aqui ainda infeliz? :joy:
 Não tem erro não, a gente tem TOC :neckbeard:  
 Vai ~~(estudar)~~ jogar o joguinho :runner:  
 E éra isso, tchau :wave:
+
+:paperclip: **PS.:** Esse README.md com mais commit que todo o resto do jogo '-'
