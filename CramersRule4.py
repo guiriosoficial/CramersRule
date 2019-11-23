@@ -2,13 +2,13 @@
 #
 #
 
-matrix = [[0, 0, 0, 0],
-          [0, 0, 0, 0],
-          [0, 0, 0, 0],
-          [0, 0, 0, 0]]
+print('Insira a Matrix 4x4 separada por ESPAÇO e ENTER:')
+matrix = [list(map(int, input().split()))for i in range(4)]
 
-for line in range(0, 4):
-    for column in range(0, 4):
-        matrix[line][column] = int(input(f'Insira o valor do índice [{line}, {column}]: '))
+for line in range(4):
+    for column in range(4):
+        print(f'{matrix[line][column]:^5}', end=' ')
+    print()
 
-print(matrix)
+
+# f'Insira o valor do índice [{line}, {column}]: '
