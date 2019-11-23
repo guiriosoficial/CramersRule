@@ -4,13 +4,30 @@
 # Cofactor      | (-1)^i+j * det(A)i*j
 
 
-def det(matrix):
-    return 6
+def laplace(matrix, index_val=1):
+    n = len(matrix)
+    if n == 1:
+        return index_val * matrix[0][0]
+    else:
+        sign = -1
+        det = 0
+        for i in range(n):
+            m = []
+            for j in range(1, n):
+                buff = []
+                for k in range(n):
+                    if k != i:
+                        buff.append(matrix[j][k])
+                m.append(buff)
+            sign *= -1
+            det += index_val * laplace(m, sign * matrix[0][i])
+        return det
 
 
 def cramer(matrix, results, order):
-    # Calc Main Matrix Determinant
-    main_det = det(matrix)
+    # Calc and Show Main Matrix Determinant
+    main_det = laplace(matrix)
+    print(f'\nDeterminante da matrix principal: {main_det}')
 
     # Build New Matrix with Substitutions
     if main_det != 0:
@@ -26,15 +43,15 @@ def cramer(matrix, results, order):
                         matrix_sub[i].append(matrix[i][j])
 
             # Show Actual Matrix with Substitution
-            print(f'\nMatrix com Substituição na COLUNA {r + 1}:')
+            print(f'\nMatriz com substituição na COLUNA {r + 1}:')
             for line in matrix_sub:
                 for num in line:
                     print(f'{num:^6}', end=' ')
                 print()
 
             # Calc Determinant with Substitution
-            sub_det = det(matrix_sub)
-            print(f'Determinante Igual a {sub_det}')
+            sub_det = laplace(matrix_sub)
+            print(f'Determinante igual a {sub_det}')
 
             # Calc and Save Final Resolution
             resolution.append(sub_det / main_det)
@@ -44,7 +61,7 @@ def cramer(matrix, results, order):
 
     # Display Resolution if Main Det is 0
     else:
-        print('A Determinante da Matriz Principal é IGUAL a 0.')
+        print('A determinante da matriz principal é IGUAL a 0.')
 
 
 def main():
@@ -53,10 +70,10 @@ def main():
 
     # Read Matrix Numbers
     print(f'Insira a Matrix {order}x{order} formatada com ESPAÇO (Colunas) e ENTER (Linhas):')
-    matrix = [list(map(int, input().split())) for i in range(order)]
+    matrix = [list(map(float, input().split())) for i in range(order)]
 
     # Read Matrix Results
-    results = list(map(int, input('Insira os resultados separados por ESPAÇO: ').split()))
+    results = list(map(float, input('Insira os resultados separados por ESPAÇO: ').split()))
 
     # Show Mounted Matrix
     print('\nSeu sistema completo é:\n')
@@ -66,19 +83,24 @@ def main():
         print(f'= {results[l]:^6}', end='\n')
 
     # Define if Has Correct Data
-    reset = input('\nOs Dados estão corretos? (Y/n): ').lower()
+    reset = input('\nOs dados estão corretos? (Y/n): ').lower()
     if reset == 'n':
         print(), main()
     else:
-        resolution = cramer(matrix, results, order)
-
         # Show Final Results
-        print('\nConjunto de Soluções:')
+        resolution = cramer(matrix, results, order)
+        print('\nConjunto de soluções:')
         for r in range(order):
             print(f'A{r + 1} = {resolution[r]}')
 
 
 main()
+
+
+
+
+
+
 
 # def det(matrix, mul = 1):
 #     width = len(matrix)
@@ -100,7 +122,7 @@ main()
 #         return total
 #
 #
-# def cramer(matrix):
+# def Cramer(matrix):
 #     n = len(matrix)
 #     mainMat = []
 #     for i in range(n):
@@ -108,7 +130,6 @@ main()
 #         for j in range(n):
 #             mainMat[i].append(matrix[i][j])
 #     mainDet = det(mainMat)
-#     print(mainMat)
 #
 #     if mainDet != 0:
 #         for r in range(n):
@@ -120,8 +141,7 @@ main()
 #                         nowMat[i].append(matrix[i][n])
 #                     else:
 #                         nowMat[i].append(matrix[i][j])
-#     #         print('x', r + 1, '=', det(nowMat) / mainDet)
-#             print(nowMat)
+#             print('x', r+1, '=', det(nowMat) / mainDet)
 #
 #
 # print('Enter number of unknowns = n')
@@ -133,5 +153,4 @@ main()
 #     for j in range(n + 1):
 #         matrix[i].append(float(input()))
 #
-# print(len(matrix))
-# cramer(matrix)
+# Cramer(matrix)
