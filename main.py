@@ -5,22 +5,25 @@
 
 
 def laplace(matrix, index_val=1):
+    # Set the matrix length
     n = len(matrix)
+
+    # Return Det if Matrix length is 1
     if n == 1:
         return index_val * matrix[0][0]
     else:
         sign = -1
         det = 0
         for i in range(n):
-            m = []
+            mtx = []
             for j in range(1, n):
                 buff = []
                 for k in range(n):
                     if k != i:
                         buff.append(matrix[j][k])
-                m.append(buff)
+                mtx.append(buff)
             sign *= -1
-            det += index_val * laplace(m, sign * matrix[0][i])
+            det += index_val * laplace(mtx, sign * matrix[0][i])
         return det
 
 
@@ -61,7 +64,7 @@ def cramer(matrix, results, order):
 
     # Display Resolution if Main Det is 0
     else:
-        print('A determinante da matriz principal é IGUAL a 0.')
+        return 0
 
 
 def main():
@@ -89,9 +92,12 @@ def main():
     else:
         # Show Final Results
         resolution = cramer(matrix, results, order)
-        print('\nConjunto de soluções:')
-        for r in range(order):
-            print(f'A{r + 1} = {resolution[r]}')
+        if resolution != 0:
+            print('\nConjunto de soluções:')
+            for r in range(order):
+                print(f'A{r + 1} = {resolution[r]}')
+        else:
+            print('\nImpossivel finalizar algorítmo.\nA determinante da matriz principal é IGUAL a 0.')
 
 
 main()
