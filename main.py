@@ -5,8 +5,7 @@
 
 
 def det(matrix):
-    print('def()')
-    return 1
+    return 6
 
 
 def cramer(matrix, results, order):
@@ -15,6 +14,7 @@ def cramer(matrix, results, order):
 
     # Build New Matrix with Substitutions
     if main_det != 0:
+        resolution = []
         for r in range(order):
             matrix_sub = []
             for i in range(order):
@@ -35,6 +35,16 @@ def cramer(matrix, results, order):
             # Calc Determinant with Substitution
             sub_det = det(matrix_sub)
             print(f'Determinante Igual a {sub_det}')
+
+            # Calc and Save Final Resolution
+            resolution.append(sub_det / main_det)
+
+    # Return Resolution to Display in Main
+        return resolution
+
+    # Display Resolution if Main Det is 0
+    else:
+        print('A Determinante da Matriz Principal é IGUAL a 0.')
 
 
 def main():
@@ -59,14 +69,16 @@ def main():
     reset = input('\nOs Dados estão corretos? (Y/n): ').lower()
     if reset == 'n':
         print(), main()
-    elif reset == 'y':
-        cramer(matrix, results, order)
     else:
-        cramer(matrix, results, order)
+        resolution = cramer(matrix, results, order)
+
+        # Show Final Results
+        print('\nConjunto de Soluções:')
+        for r in range(order):
+            print(f'A{r + 1} = {resolution[r]}')
 
 
 main()
-
 
 # def det(matrix, mul = 1):
 #     width = len(matrix)
