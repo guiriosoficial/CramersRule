@@ -4,13 +4,13 @@
 # Cofactor      | (-1)^i+j * det(A)i*j
 
 
-def laplace(matrix, index_val=1):
+def laplace(matrix, val=1):
     # Set the matrix length
     n = len(matrix)
 
     # Return Det if Matrix length is 1
     if n == 1:
-        return index_val * matrix[0][0]
+        return val * matrix[0][0]
     else:
         sign = -1
         det = 0
@@ -23,7 +23,7 @@ def laplace(matrix, index_val=1):
                         buff.append(matrix[j][k])
                 mtx.append(buff)
             sign *= -1
-            det += index_val * laplace(mtx, sign * matrix[0][i])
+            det += val * laplace(mtx, sign * matrix[0][i])
         return det
 
 
@@ -48,8 +48,8 @@ def cramer(matrix, results, order):
             # Show Actual Matrix with Substitution
             print(f'\nMatriz com substituição na COLUNA {r + 1}:')
             for line in matrix_sub:
-                for num in line:
-                    print(f'{num:^6}', end=' ')
+                for val in line:
+                    print(f'{val:^8}', end=' ')
                 print()
 
             # Calc Determinant with Substitution
@@ -81,9 +81,9 @@ def main():
     # Show Mounted Matrix
     print('\nSeu sistema completo é:\n')
     for l, line in enumerate(matrix):
-        for num in line:
-            print(f'{num:^6}', end=' ')
-        print(f'= {results[l]:^6}', end='\n')
+        for val in line:
+            print(f'{val:^8}', end=' ')
+        print(f'= {results[l]:^8}', end='\n')
 
     # Define if Has Correct Data
     reset = input('\nOs dados estão corretos? (Y/n): ').lower()
@@ -101,62 +101,3 @@ def main():
 
 
 main()
-
-
-
-
-
-
-
-# def det(matrix, mul = 1):
-#     width = len(matrix)
-#     if width == 1:
-#         return mul * matrix[0][0]
-#     else:
-#         sign = -1
-#         total = 0
-#         for i in range(width):
-#             m = []
-#             for j in range(1, width):
-#                 buff = []
-#                 for k in range(width):
-#                     if k != i:
-#                         buff.append(matrix[j][k])
-#                 m.append(buff)
-#             sign *= -1
-#             total += mul * det(m, sign * matrix[0][i])
-#         return total
-#
-#
-# def Cramer(matrix):
-#     n = len(matrix)
-#     mainMat = []
-#     for i in range(n):
-#         mainMat.append([])
-#         for j in range(n):
-#             mainMat[i].append(matrix[i][j])
-#     mainDet = det(mainMat)
-#
-#     if mainDet != 0:
-#         for r in range(n):
-#             nowMat = []
-#             for i in range(n):
-#                 nowMat.append([])
-#                 for j in range(n):
-#                     if j == r:
-#                         nowMat[i].append(matrix[i][n])
-#                     else:
-#                         nowMat[i].append(matrix[i][j])
-#             print('x', r+1, '=', det(nowMat) / mainDet)
-#
-#
-# print('Enter number of unknowns = n')
-# n = int(input())
-# print('sequentially enter the elements of matrix n*(n+1)')
-# matrix = []
-# for i in range(n):
-#     matrix.append([])
-#     for j in range(n + 1):
-#         matrix[i].append(float(input()))
-#
-# Cramer(matrix)
