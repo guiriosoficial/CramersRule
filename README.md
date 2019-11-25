@@ -1,3 +1,6 @@
 # Cramer's Rule
+A Calculator to solve square matrices systems using Cramer's Rule and Laplace's Theorem. This script is designed to assist in the study and resolution of exercises in Linear Algebra classes.  
 
-Resolução de Sistemas Quadrados em Python para Algebra Linear e Geometria Analítica - Bilac
+The code was inspired in this calculator in **C++** made by **RafaelGSS**: https://github.com/RafaelGSS/CramerMethod
+
+## How it works
