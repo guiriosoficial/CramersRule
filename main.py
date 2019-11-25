@@ -30,7 +30,7 @@ def laplace(matrix, val=1):
 def cramer(matrix, results, order):
     # Calc and Show Main Matrix Determinant
     main_det = laplace(matrix)
-    print(f'\nDeterminante da matrix principal: {main_det}')
+    print(f'\nMain matrix determinant: {main_det}')
 
     # Build New Matrix with Substitutions
     if main_det != 0:
@@ -46,7 +46,7 @@ def cramer(matrix, results, order):
                         matrix_sub[i].append(matrix[i][j])
 
             # Show Actual Matrix with Substitution
-            print(f'\nMatriz com substituição na COLUNA {r + 1}:')
+            print(f'\nMatrix with replacement at COLUMN {r + 1}:')
             for line in matrix_sub:
                 for val in line:
                     print(f'{val:^8}', end=' ')
@@ -54,7 +54,7 @@ def cramer(matrix, results, order):
 
             # Calc Determinant with Substitution
             sub_det = laplace(matrix_sub)
-            print(f'Determinante igual a {sub_det}')
+            print(f'Determinant of this matrix: {sub_det}')
 
             # Calc and Save Final Resolution
             resolution.append(sub_det / main_det)
@@ -69,35 +69,35 @@ def cramer(matrix, results, order):
 
 def main():
     # Read Matrix Range
-    order = int(input('Insira a Ordem da Matriz: '))
+    order = int(input('Enter the Matrix Order: '))
 
     # Read Matrix Numbers
-    print(f'Insira a Matrix {order}x{order} formatada com ESPAÇO (Colunas) e ENTER (Linhas):')
+    print(f'Enter the Matrix {order}x{order} formatted with SPACES (for columns) and ENTERS (for lines):')
     matrix = [list(map(float, input().split())) for i in range(order)]
 
     # Read Matrix Results
-    results = list(map(float, input('Insira os resultados separados por ESPAÇO: ').split()))
+    results = list(map(float, input('Enter the respective results for LINES separated by SPACES: ').split()))
 
     # Show Mounted Matrix
-    print('\nSeu sistema completo é:\n')
+    print('\nCheck if your system is mounted correctly:\n')
     for l, line in enumerate(matrix):
         for val in line:
             print(f'{val:^8}', end=' ')
         print(f'= {results[l]:^8}', end='\n')
 
     # Define if Has Correct Data
-    reset = input('\nOs dados estão corretos? (Y/n): ').lower()
+    reset = input('\nEnter (Y) for YES or (N) for NO. (YES is default): ').lower()
     if reset == 'n':
         print(), main()
     else:
         # Show Final Results
         resolution = cramer(matrix, results, order)
         if resolution != 0:
-            print('\nConjunto de soluções:')
+            print('\nSolution set:')
             for r in range(order):
                 print(f'A{r + 1} = {resolution[r]}')
         else:
-            print('\nImpossivel finalizar algorítmo.\nA determinante da matriz principal é IGUAL a 0.')
+            print('\nImpossible to finish algorithm.\nThe determinant of the main matrix is EQUAL to 0.')
 
 
 main()
