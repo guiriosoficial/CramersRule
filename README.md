@@ -15,7 +15,7 @@ $ ./dist/crc-linux
 $ # You can also run using the python compiler.
 $ # Python 3.7 or superior is required. If you don't have it, read the Python docs to install.
 $ # https://www.python.org/downloads/release/python-370/
-$ python3 main.py
+$ python3 ./src/main.py
 ```  
 
 2. Enter the Matrix Order:  
