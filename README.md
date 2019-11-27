@@ -4,18 +4,12 @@ A Calculator to solve square matrices systems using Cramer's Rule and Laplace's 
 The code was inspired in this calculator in **C++** made by **RafaelGSS**: https://github.com/RafaelGSS/CramerMethod
 
 ## How it works
-1. Start program by running on terminal the `dist/crc-win.exe`, or, if you are using Linux, running `dist/crc-linux`:
+1. Clone this repository and start program the program by running (Python 3.7 is required):
 ```bash
-$ # On WINDOWS:
-$ ./dist/crc-win.exe
-
-$ # On LINUX:
-$ ./dist/crc-linux
-
-$ # You can also run using the python compiler.
-$ # Python 3.7 or superior is required. If you don't have it, read the Python docs to install.
+$ # Python 3.7 is required. If you don't have it, read the Python docs to install.
 $ # https://www.python.org/downloads/release/python-370/
-$ python3 ./src/main.py
+$ python main.py # If Python 3 is default
+# python3 main.py # If you have Python 2 installed as default
 ```  
 
 2. Enter the Matrix Order:  
