@@ -9,7 +9,7 @@ The code was inspired in this calculator in **C++** made by **RafaelGSS**: https
 $ # Python 3.7 is required. If you don't have it, read the Python docs to install.
 $ # https://www.python.org/downloads/release/python-370/
 $ python main.py # If Python 3 is default
-# python3 main.py # If you have Python 2 installed as default
+$ python3 main.py # If you have Python 2 installed as default
 ```  
 
 2. Enter the Matrix Order:  
