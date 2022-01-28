@@ -3,7 +3,7 @@
 # Laplace       | Sum cof(A)i*j * A(i*j)
 # Cofactor      | (-1)^i+j * det(A)i*j
 
-
+# Laplace algorithm
 def laplace(matrix, val=1):
     # Set the matrix length
     n = len(matrix)
@@ -26,7 +26,7 @@ def laplace(matrix, val=1):
             det += val * laplace(mtx, sign * matrix[0][i])
         return det
 
-
+# Cramer algorithm
 def cramer(matrix, results, order):
     # Calc and Show Main Matrix Determinant
     main_det = laplace(matrix)
@@ -66,7 +66,7 @@ def cramer(matrix, results, order):
     else:
         return 0
 
-
+# Main function
 def main():
     # Read Matrix Range
     order = int(input('Enter the Matrix Order: '))
